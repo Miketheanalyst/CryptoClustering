@@ -35,16 +35,4 @@ This project involves several key steps to analyze and cluster cryptocurrencies:
    - Create scatter plots to visualize the clusters for both original and PCA data.
    - Use hvPlot for interactive visualizations.
 
-## Key Features and Techniques
 
-### Data Loading and Preprocessing
-
-```python
-import pandas as pd
-
-# Load the data
-file_path = "Resources/crypto_market_data.csv"
-crypto_df = pd.read_csv(file_path)
-
-# Drop the coin_id column and any rows with NaN values
-crypto_df = crypto_df.drop(columns=["coin_id"]).dropna()
